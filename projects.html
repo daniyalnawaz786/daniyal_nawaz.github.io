@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Daniyal Nawaz</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="scanlines"></div>
+  <div class="grid-bg"></div>
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <span class="bracket">[</span>
+      <span class="logo-text">DN</span>
+      <span class="bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link"><span class="link-num">01.</span> HOME</a></li>
+      <li><a href="projects.html" class="nav-link active"><span class="link-num">02.</span> PROJECTS</a></li>
+      <li><a href="index.html#skills" class="nav-link"><span class="link-num">03.</span> SKILLS</a></li>
+      <li><a href="index.html#about" class="nav-link"><span class="link-num">04.</span> ABOUT</a></li>
+      <li><a href="index.html#contact" class="nav-link"><span class="link-num">05.</span> CONTACT</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">AVAILABLE</span>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="projects-hero">
+    <div class="projects-hero-tag">// DANIYAL NAWAZ / WORK</div>
+    <h1 class="projects-hero-title">MY <span>PROJECTS</span></h1>
+    <p class="projects-hero-sub">Data science projects built to solve real business problems — from predictive modeling to interactive dashboards.</p>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+    <button class="filter-btn" data-filter="ml">MACHINE LEARNING</button>
+    <button class="filter-btn" data-filter="dashboard">DASHBOARD</button>
+  </div>
+
+  <!-- PROJECTS GRID -->
+  <div class="projects-grid" id="projects-grid">
+
+    <!-- PROJECT 1: Sales Prediction -->
+    <div class="project-card featured-project" data-category="ml">
+      <div class="card-num">01</div>
+      <div class="card-img-wrap">
+        <img src="images/sales-prediction.jpg" alt="Supermarket Sales Prediction"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="card-img-placeholder" style="display:none">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00f5c4" stroke-width="1" opacity="0.6"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <span style="margin-top:10px;letter-spacing:2px;font-size:0.65rem">SALES PREDICTION MODEL</span>
+        </div>
+      </div>
+      <div class="card-category">MACHINE LEARNING · REGRESSION</div>
+      <h3 class="card-title">Supermarket Sales Prediction</h3>
+      <p class="card-desc">End-to-end machine learning pipeline that predicts supermarket branch sales from historical transaction data. The project covers the full data science workflow: data cleaning, exploratory analysis, feature engineering, model selection and training with Scikit-learn, and performance evaluation using metrics like RMSE and R². Turns raw sales records into accurate revenue forecasts that support smarter inventory planning and business decisions.</p>
+
+      <div class="project-highlights">
+        <div class="highlight-item">
+          <span class="hi-icon">🎯</span>
+          <span>Predictive regression model on real sales dataset</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">🔧</span>
+          <span>Full pipeline: cleaning → EDA → features → train → evaluate</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">📊</span>
+          <span>Visualizations of patterns, trends &amp; model performance</span>
+        </div>
+      </div>
+
+      <div class="card-tags">
+        <span class="card-tag">Python</span>
+        <span class="card-tag">Scikit-learn</span>
+        <span class="card-tag">Pandas</span>
+        <span class="card-tag">NumPy</span>
+        <span class="card-tag">Matplotlib</span>
+        <span class="card-tag">Seaborn</span>
+        <span class="card-tag">Regression</span>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/daniyalnawaz786/supermarket-sales-prediction" target="_blank" class="card-link primary">VIEW ON GITHUB →</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Sales Dashboard -->
+    <div class="project-card featured-project" data-category="dashboard">
+      <div class="card-num">02</div>
+      <div class="card-img-wrap">
+        <img src="images/sales-dashboard.jpg" alt="Supermart Sales Dashboard"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="card-img-placeholder" style="display:none">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0090ff" stroke-width="1" opacity="0.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+          <span style="margin-top:10px;letter-spacing:2px;font-size:0.65rem">ANALYTICS DASHBOARD</span>
+        </div>
+      </div>
+      <div class="card-category">DATA VISUALIZATION · DASHBOARD</div>
+      <h3 class="card-title">Supermart Sales Dashboard</h3>
+      <p class="card-desc">Interactive analytics dashboard built with Streamlit and Plotly that visualizes supermarket sales data across multiple dimensions — branches, product lines, customer types, payment methods, and time periods. Features dynamic filters, KPI cards, bar charts, pie charts, and trend lines that let stakeholders explore the data and extract actionable business insights without writing a single line of code.</p>
+
+      <div class="project-highlights">
+        <div class="highlight-item">
+          <span class="hi-icon">🖥</span>
+          <span>Live interactive Streamlit web app</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">🔍</span>
+          <span>Dynamic filters: branch, product line, date range</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">💡</span>
+          <span>KPI cards, trend charts &amp; distribution plots</span>
+        </div>
+      </div>
+
+      <div class="card-tags">
+        <span class="card-tag">Python</span>
+        <span class="card-tag">Streamlit</span>
+        <span class="card-tag">Plotly</span>
+        <span class="card-tag">Pandas</span>
+        <span class="card-tag">Seaborn</span>
+        <span class="card-tag">Matplotlib</span>
+        <span class="card-tag">Dashboard</span>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/daniyalnawaz786/supermart-sales-dashboard" target="_blank" class="card-link primary">VIEW ON GITHUB →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MORE COMING SOON -->
+  <div class="coming-soon-wrap">
+    <div class="coming-soon">
+      <div class="cs-icon">⚡</div>
+      <h3 class="cs-title">MORE PROJECTS COMING SOON</h3>
+      <p class="cs-sub">Currently working on new data science projects. Watch the GitHub for updates.</p>
+      <a href="https://github.com/daniyalnawaz786" target="_blank" class="btn-ghost" style="margin-top:1.5rem">FOLLOW ON GITHUB →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="bracket">[</span>
+      <span>DANIYAL NAWAZ</span>
+      <span class="bracket">]</span>
+      <span class="footer-year"> © 2025</span>
+    </div>
+    <div class="footer-center">Data Scientist · Karachi, Pakistan</div>
+    <div class="footer-right">
+      <a href="index.html" class="footer-link">← HOME</a>
+    </div>
+  </footer>
+
+  <script>
+    // Filter logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.transition = 'opacity 0.3s, transform 0.3s';
+          if (match) {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+            card.style.display = 'block';
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.96)';
+            setTimeout(() => { if (card.style.opacity === '0') card.style.display = 'none'; }, 300);
+          }
+        });
+      });
+    });
+
+    // Entry animation
+    cards.forEach((card, i) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = `opacity 0.6s ${i * 0.15}s, transform 0.6s ${i * 0.15}s`;
+      setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 80);
+    });
+  </script>
+</body>
+</html>
