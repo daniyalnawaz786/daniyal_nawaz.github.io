@@ -39,30 +39,7 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; }
 
 /* ── BACKGROUND LAYERS ── */
-.grid-bg {
-  position: fixed; inset: 0; z-index: 0; pointer-events: none;
-  background-image:
-    linear-gradient(rgba(0,245,196,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,245,196,0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 80%);
-}
-.scanlines {
-  position: fixed; inset: 0; z-index: 999; pointer-events: none;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0,0,0,0.03) 0px,
-    rgba(0,0,0,0.03) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-}
-.noise {
-  position: fixed; inset: 0; z-index: 998; pointer-events: none;
-  opacity: 0.02;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 200px 200px;
-}
+/* Removed techy scanlines/noise/grid for cleaner look */
 
 /* ── NAV ── */
 .nav {
@@ -135,13 +112,12 @@ img { max-width: 100%; }
 /* ── HERO ── */
 .hero {
   position: relative; z-index: 1;
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 8rem 4rem 4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 4rem;
-  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
   margin: 0 auto;
 }
 .hero-tag {
@@ -240,6 +216,20 @@ img { max-width: 100%; }
   letter-spacing: 2px;
 }
 .stat-divider { width: 1px; height: 40px; background: var(--border); }
+
+/* Orders completed badge */
+.orders-badge {
+  color: var(--accent2) !important;
+  text-shadow: 0 0 20px rgba(0,144,255,0.5) !important;
+  position: relative;
+}
+.orders-badge::after {
+  content: '✓';
+  font-size: 0.7rem;
+  vertical-align: super;
+  margin-left: 2px;
+  color: var(--accent);
+}
 
 /* ── HERO RIGHT: HEX + AVATAR ── */
 .hero-right { display: flex; justify-content: center; align-items: center; }
